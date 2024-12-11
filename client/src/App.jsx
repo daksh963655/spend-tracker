@@ -8,6 +8,9 @@ import ForgetPassword from "./Landing/Auth/forgetPassword";
 import Otp from "./Landing/Auth/otp";
 import ResetPassword from "./Landing/Auth/reset-password";
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'react-toastify/dist/ReactToastify.css';
+
+import User from "./User/index.jsx";
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
           <Route path="/forgot-password" element={<ForgetPassword />} />
           <Route path="/otp" element={<Otp />} />
           <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="/dashboard" element={<User />} />
         </Routes>
       </Router>
     </>
